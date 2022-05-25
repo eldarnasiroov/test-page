@@ -3,16 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  /* border: 1px solid black; */
+/* body {
   height: 500px;
-}
+} */
 .header {
   width: 90%;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
   align-items: center;
 }
 .header_logo {
@@ -62,8 +60,85 @@ body {
   color: #fcfdfe;
   text-transform: uppercase;
 }
+/* MAIN */
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+.container_1 {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container_1_right_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container_1_header {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 126%;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.container_1_header_part_1 {
+  color: #000000;
+}
+.container_1_header_part_2 {
+  color: #4285f4;
+}
+.container_1_description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #616161;
+  margin: 25px 0;
+}
+.get_started_button {
+  width: 144px;
+  height: 40px;
+  background: #ec5863;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.14em;
+  color: #fcfdfe;
+  text-transform: uppercase;
+}
+.container_1_left_block {
+  display: flex;
+  align-items: center;
+}
+
+/* MEDIA */
+@media screen and (max-width: 780px) {
+  .container_1 {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
 @media screen and (max-width: 650px) {
+ 
   .header {
+    align-self: center;
     width: 90%;
     margin: 20px auto;
     display: flex;
@@ -87,6 +162,19 @@ body {
     line-height: 0.75rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+  }
+  
+}
+@media screen and (max-width: 550px){
+  .container_1_left_block {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+  }
+  .doctor_img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 364px) {
