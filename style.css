@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* border: 1px solid black; */
+  height: 500px;
+}
+.header {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+}
+.header_logo_name {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  display: flex;
+}
+.header_logo_name_part_1 {
+  color: #000000;
+}
+.header_logo_name_part_2 {
+  color: #ec5863;
+}
+.header_nav {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.header_nav_name {
+  margin: 0 10px;
+}
+.header_download_button {
+  width: 130px;
+  height: 40px;
+  background: #4285f4;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.14em;
+  color: #fcfdfe;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 650px) {
+  .header {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    align-items: center;
+  }
+  .header_logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .header_nav {
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 364px) {
+  .header_nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .header_nav_name {
+    margin: 0 5px;
+  }
+}
